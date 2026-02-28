@@ -20,19 +20,61 @@ p    { font-size: 1.125rem; } /* 18px */
 
 ## Install
 
+Pick your AI tool:
+
+### Claude Code
 ```bash
 npx skills add zjebinsky/fluid-typography
 ```
+Then ask: *"set up fluid typography"* or *"add the scaling system"*
 
-## Usage
+---
 
-Once installed, just ask Claude:
+### Cursor
+Copy `platforms/cursor.mdc` into your project:
+```bash
+mkdir -p .cursor/rules
+curl -o .cursor/rules/fluid-typography.mdc \
+  https://raw.githubusercontent.com/zjebinsky/fluid-typography/master/platforms/cursor.mdc
+```
+Cursor will apply it automatically when working on CSS files.
 
-- `"set up fluid typography"`
-- `"add the scaling system, my desktop artboard is 1280"`
-- `"fluid layout for this editorial project"`
+---
 
-Claude will ask for your Figma artboard widths (or use sensible defaults) and output the complete CSS.
+### GitHub Copilot
+Copy `platforms/copilot-instructions.md` into your project:
+```bash
+mkdir -p .github
+curl -o .github/copilot-instructions.md \
+  https://raw.githubusercontent.com/zjebinsky/fluid-typography/master/platforms/copilot-instructions.md
+```
+
+---
+
+### OpenAI Codex CLI
+Copy `platforms/AGENTS.md` to your project root:
+```bash
+curl -o AGENTS.md \
+  https://raw.githubusercontent.com/zjebinsky/fluid-typography/master/platforms/AGENTS.md
+```
+
+---
+
+### opencode
+Same as Codex — copy `platforms/AGENTS.md` to your project root:
+```bash
+curl -o AGENTS.md \
+  https://raw.githubusercontent.com/zjebinsky/fluid-typography/master/platforms/AGENTS.md
+```
+
+---
+
+### Gemini CLI
+Copy `platforms/GEMINI.md` to your project root:
+```bash
+curl -o GEMINI.md \
+  https://raw.githubusercontent.com/zjebinsky/fluid-typography/master/platforms/GEMINI.md
+```
 
 ## What's included
 
