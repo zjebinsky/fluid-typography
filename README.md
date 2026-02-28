@@ -1,6 +1,6 @@
-# Fluid Typography — Claude Code Skill
+# Fluid Typography
 
-A [Claude Code skill](https://skills.sh/) that generates a complete fluid typography and layout scaling system in CSS, tuned for editorial-style web design.
+A proportional CSS scaling system for editorial web design — works with Claude Code, Cursor, GitHub Copilot, Codex, opencode, and Gemini CLI. Drop in one file and your AI assistant generates the complete setup, configured to your Figma artboard dimensions.
 
 ## What it does
 
